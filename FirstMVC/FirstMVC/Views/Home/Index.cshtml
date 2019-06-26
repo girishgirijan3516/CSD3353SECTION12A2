@@ -7,7 +7,6 @@
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div-->
-
 <!--div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
@@ -29,3 +28,22 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div-->
+
+
+@{
+    int a, b, c;
+    string add;
+    a = 10;
+    b = 20;
+    c = a + b;
+    add = "Addition Is :" + c;
+    <h2>Index</h2>
+    <h2>@add</h2>
+}
+<h2>HTML Helper Controler</h2>
+<table border="1">
+    <tr><td>Name </td><td>@Html.TextBox("Name")</td></tr>
+    <tr><td>Address </td><td>@Html.TextArea("Address")</td></tr>
+    <tr><td>Language </td><td>Tamil @Html.CheckBox("Tamil") English @Html.CheckBox("English")</td></tr>
+    <tr><td>Gender </td><td>Male @Html.RadioButton("Gender", "Male") Female @Html.RadioButton("Gender", "Female")</td></tr>
+</table>
